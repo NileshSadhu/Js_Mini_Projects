@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4ef4adf555.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Project ToDo</title>
+</head>
+
+<body class="bg-blue-600">
+    <div class="flex justify-center m-10 gap-5">
+        <input id="task-input" value="" type="text" placeholder="Enter your task..." class="pl-4 rounded shadow-xl" />
+        <button id="task-btn" class="bg-white rounded-full justify-center items-center p-3 shadow-xl">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+    </div>
+    <div class="flex flex-col w-full h-screen bg-white rounded-t-[100px] shadow-xl items-center">
+        <div class="border-b-1 border-blue-300">
+            <h1 class="p-5 text-xl">ToDo Application by 💙Nilesh Sadhu</h1>
+        </div>
+        <ul id="task-list" class="m-3">
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
