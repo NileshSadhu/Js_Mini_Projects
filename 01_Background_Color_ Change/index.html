@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Change Bg color</title>
+</head>
+
+<body>
+    <div id='wall' class="flex justify-center items-center h-screen w-full" style="background-color: #000000;">
+        <button id="btn" class="bg-blue-300 p-3 rounded-md">Click Me</button>
+    </div>
+
+    <script>
+        function randomColor() {
+            const color = ['red', 'yellow', 'green', 'blue', 'pink', 'orange', 'purple', 'black'];
+            const num = Math.floor(Math.random() * color.length);
+            return color[num];
+        }
+
+        document.getElementById('btn').addEventListener('click', () => {
+            document.getElementById('wall').style.backgroundColor = randomColor();
+        });
+    </script>
+</body>
+
+</html>
