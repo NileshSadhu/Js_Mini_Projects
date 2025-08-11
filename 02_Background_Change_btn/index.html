@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Change bg from btn</title>
+</head>
+
+<body>
+    <div id="bg" class="flex h-screen justify-center items-center" style="background-color: #ffffff;">
+        <button id="rd" class="bg-red-500 p-5 m-5 rounded-xl">Red</button>
+        <button id="yl" class="bg-yellow-500 p-5 m-5 rounded-xl">Yellow</button>
+        <button id="gr" class="bg-green-500 p-5 m-5 rounded-xl">Green</button>
+    </div>
+
+    <script>
+        document.getElementById('rd').addEventListener('click', () => {
+            document.getElementById('bg').style.backgroundColor = 'red';
+        })
+
+        document.getElementById('yl').addEventListener('click', () => {
+            document.getElementById('bg').style.backgroundColor = 'yellow';
+        })
+
+        document.getElementById('gr').addEventListener('click', () => {
+            document.getElementById('bg').style.backgroundColor = 'green';
+        })
+    </script>
+</body>
+
+</html>
