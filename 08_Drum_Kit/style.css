@@ -1,0 +1,45 @@
+:root {
+  --bg: #0f1724;
+  --accent: #ff6b6b;
+  --pad: linear-gradient(145deg, #111827, #0b1220);
+  --muted: #9aa7b8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: var(--bg);
+  color: var(--muted);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.kit {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.pad {
+  background: var(--pad);
+  color: var(--muted);
+  font-weight: bold;
+  font-size: 16px;
+  padding: 20px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.pad:active {
+  transform: translateY(4px) scale(0.98);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
