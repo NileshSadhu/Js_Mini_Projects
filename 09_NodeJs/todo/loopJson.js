@@ -12,7 +12,7 @@ array.splice(0, 1, { 'task': 'task101' });
 // splice ([array kidar se satrt kar na hai], [or uder se kitne element nikal ne hai], [or uder kya add kar na hai]);
 console.log(array);
 
-let taskNo = 3;
+let taskNo = 3 - 1; //splice index start with 0;
 var tasks = [{ "task": "Buy Protien" }, { "task": "Buy Milk&Bread" }, { "task": "Buy Apples" }, { "task": "Buy Mango" }, { "task": "Buy Grapes" },];
-tasks.splice(taskNo);
+tasks.splice(taskNo, 1);
 console.log(tasks);

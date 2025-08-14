@@ -1,4 +1,5 @@
 const fs = require('fs');
+const { type } = require('os');
 const filePath = './tasks.json';
 
 const loadTasks = () => {
@@ -9,6 +10,17 @@ const loadTasks = () => {
         return JSON.parse(dataJSON);
     } catch (error) {
         return [];
+    }
+}
+
+const removeTask = (taskNo) => {
+    let taskRemoveIndex = taskNo - 1;
+    const Tasks = loadTasks();
+    if (Tasks.length > 0 && taskNo < Tasks.length) {
+        Tasks.splice(taskRemoveIndex, 1);
+        saveTasks(Tasks);
+    } else {
+        console.log("Index out of number.");
     }
 }
 
