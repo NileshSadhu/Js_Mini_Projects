@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <style>
+        /* Reset some defaults */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #89f7fe, #66a6ff);
+        }
+
+        div {
+            text-align: center;
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        #decrement {
+            background-color: #ff4d4d;
+            color: white;
+        }
+
+        #reset {
+            background-color: #ffc107;
+            color: #333;
+        }
+
+        #increment {
+            background-color: #28a745;
+            color: white;
+        }
+
+        /* Hover effects */
+        button:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 id="showNo">0</h1>
+        <div>
+            <button id="decrement">Decrement</button>
+            <button id="reset">Reset</button>
+            <button id="increment">Increment</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
